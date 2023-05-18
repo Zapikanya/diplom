@@ -7,10 +7,48 @@
     padding: 0;
     
   }
+  .help {
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#00A7CC;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
   
- 
+  }
+  .nextVopr{
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#17778c;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .nextVopr:hover{
+    background-color:#185e6e;
+  }
+  .help:hover{
+    background-color: #007a95;
+  }
+  .comm{
+    width: 730px;
+    font-size: 20px;
+    font-family: "Roboto-Regular";
+    
+    text-align: start;
+    
+  }
+  
+ .block-photo img{
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+ }
   .block-photo{
-    object-fit: contain;
+    
     margin-top: 5px;
     margin-bottom: 0;
     margin-left: auto;
@@ -66,14 +104,14 @@
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   }
-  button:hover{
+  
+  .main-buttons button:hover{
     box-shadow: 0 0 40px 40px #b5b5b5 inset;
   }
-  
   .main-menu {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
    
   }
@@ -203,7 +241,7 @@
   }
   body::-webkit-scrollbar-track {
     background: rgb(46, 16, 65);
-    margin-top: 20px;        
+        
   }
   body::-webkit-scrollbar-thumb {
     background-color: rgba(46,40,99,1);    
@@ -221,4 +259,6 @@
     color: white;
     font-family: 'Roboto-Regular';
   }
-
+.button-arrow:hover{
+  color:#00A7CC;
+}

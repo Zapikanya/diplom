@@ -23,9 +23,9 @@
     <div class="block-text"><p id = 'question' class = 'text'></p></div>
     <input type="hidden" value="0" id = 'input' >
     <div class = 'main-buttons' id = 'main-buttons'></div>
-    <div id="comm"></div>
-    <div id="nextBtn"></div>
-    <button onclick="showsupport()" id="support">Подсказка</button>
+    <div id="comm" class = "comm"></div>
+    <div id="nextBtn" ></div>
+    <button onclick="showsupport()" id="support" class = "help">Подсказка</button>
   </div>
   <script>
 
@@ -86,7 +86,7 @@
                 answers.push({q: input.value, a: i, correct: false})
                 a.style.backgroundColor = 'red'
                 comm.innerText = db.comment
-                nextBtn.innerHTML = `<button onclick="next()">Следующий вопрос</button>`
+                nextBtn.innerHTML = `<button onclick="next()" class = "nextVopr">Следующий вопрос →</button>`
                 isError = true
                 await fs.readFile('other.json', 'utf-8', async (err, data) => {
                   data = await JSON.parse(data, null, 2)
@@ -165,7 +165,7 @@
               } else {
                 answers.push({q: input.value, a: i, correct: false})
                 a.style.backgroundColor = 'red'
-                nextBtn.innerHTML = `<button onclick="next()">Следующий вопрос</button>`
+                nextBtn.innerHTML = `<button onclick="next()" class = "nextVopr">Следующий вопрос →</button>`
                 comm.innerText = db.comment
                 isError = true
                 await fs.readFile('other.json', 'utf-8', async (err, data) => {
@@ -235,7 +235,7 @@
                 a.style.backgroundColor = 'red'
                 comm.innerText = db.comment
                 isError = true
-                nextBtn.innerHTML = `<button onclick="next()">Следующий вопрос</button>`
+                nextBtn.innerHTML = `<button onclick="next()" class = "nextVopr">Следующий вопрос →</button>`
                 await fs.readFile('other.json', 'utf-8', async (err, data) => {
                   data = await JSON.parse(data, null, 2)
                   await fs.writeFile('other.json', JSON.stringify({...data, incorrect: data.incorrect + 1}, null, 2), () => {
@@ -259,15 +259,15 @@
                 setTimeout(() => {
                   const mainMenu = document.getElementsByClassName('main-menu')[0]
                   mainMenu.innerHTML = `
-                  <div style="background-color: transparent; color: white; font-weight:bold; font-size: 30px; margin-top:30px;" class="block-photo">
+                  <div style="background-color: transparent;color: white;font-weight:bold;font-size: 30px;margin-top:30px;font-family: 'Roboto-Regular';" class="block-photo">
                     <p>Билет окончен</p>
                     <p style="margin-top:20px;">РЕЗУЛЬТАТ: ${correctAnswers > 17 ? "<b style='color:green;'>СДАН</b>" : "<b style='color:red;'>НЕ СДАН</b>"}</p>
                   </div>
-                  <div style="background-color: transparent;" class="block-photo">
-                    <p style="color:white; font-weight:bold; font-size:30px">${correctAnswers} / 20</p>
+                  <div style="background-color: transparent;margin-top: 20px;font-family:'Roboto-Regular';">
+                    <p style="color:white;font-weight:bold;font-size:30px;font-family:'Roboto-Regular';">${correctAnswers} / 20</p>
                   </div>
-                  <div style="background-color: transparent;" class="block-photo">
-                    <a href="bilets.html" style="color:white; font-weight:bold; font-size:30px">Назад к билетам</a>
+                  <div style="background-color: #00A7CC;border-radius:10px;width: 300px;height: 70px;text-align: center;display: flex;justify-content: center;align-items: center;margin-top: 20px;">
+                    <a href="bilets.html" style="color:white;font-weight:bold;font-size:30px;text-decoration: none;font-family: 'Roboto-Regular';">Назад к билетам</a>
                   </div>
                   `
                 }, 1000);
