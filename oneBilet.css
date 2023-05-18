@@ -10,6 +10,7 @@
   
  
   .block-photo{
+    object-fit: contain;
     margin-top: 5px;
     margin-bottom: 0;
     margin-left: auto;

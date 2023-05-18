@@ -9,16 +9,16 @@
 <body class="main-body">
   <div class = 'main-menu'>
     <div class="menu-header">
-      <a href="main.html">
+      <a href="bilets.html">
         <div class="arrow"></div>
       </a>
-      <button onclick="prev()" class="button-arrow"><</button>
+      <button onclick="prev()"><</button>
       <p id="count">1/20</p>
-      <button onclick="next()" class="button-arrow">></button>
+      <button onclick="next()">></button>
       <p id="bilet">№1</p>
       <p id="timer">20:00</p>
     </div>
-    <div class="block-photo" ><img src="./road.jpg" alt="вопрос без изображения"></div>
+    <div class="block-photo"><img id="image" src="./road.jpg" alt="вопрос без изображения"></div>
     <div class="block-text"><p id = 'question' class = 'text'></p></div>
     <input type="hidden" value="0" id = 'input' >
     <div class = 'main-buttons' id = 'main-buttons'></div>
@@ -52,6 +52,7 @@
           if (Number(input.value) === 19) return
           input.value = Number(input.value) + 1
           db = databases[bilet][input.value]
+          image.src = db.image
           question.innerText = db.question
           count.innerText = `${Number(input.value) + 1}/20`
           document.getElementById('main-buttons').innerHTML = ''
@@ -125,6 +126,7 @@
           if (Number(input.value) === 0) return
           input.value = Number(input.value) - 1
           db = databases[bilet][input.value]
+          image.src = db.image
           document.getElementById('main-buttons').innerHTML = ''
           question.innerText = db.question
           count.innerText = `${Number(input.value) + 1}/20`
@@ -201,6 +203,7 @@
         var question = document.getElementById('question')
         var count = document.getElementById('count')
         var numBilet = document.getElementById('bilet')
+        var image = document.getElementById('image')
 
         numBilet.innerText = '№' + Number(bilet + 1) 
         question.innerText = db.question
@@ -208,7 +211,7 @@
         
         async function update() {
           var correct = db.correct
-          
+          image.src = db.image
           db.answers.forEach((el, i) => {
             var a = document.createElement('button')
 
