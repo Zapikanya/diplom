@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="date" content="01.05.2023 04:43:42">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+       
+        <link rel="stylesheet" href="text.css">
+        
+    </head>
+    <body>
+        <div class="spritesheet">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-back" viewBox="0 0 24 24">
+                    <title>back</title>
+                    <path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/>
+                    <path d="M17.51 3.87 15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
+                </symbol>
+                
+            </svg>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div id="app">
+                    <div class="navbar" id="navbar">
+                        <div class="left">
+                            <a href="./roadLine.html">
+                                <svg>
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="title">Правила</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="content-inner">
+                        <div class="static" v-pre>
+                            <div class="rule" id="rule">
+                                <h1>1. Горизонтальная разметка</h1>
+                                <div class="text">
+                                    <div>
+                                        <p>Горизонтальная разметка (линии, стрелы, надписи и другие обозначения на проезжей части) устанавливает определенные режимы и порядок движения либо содержит иную информацию для участников дорожного движения. </p>
+                                        <p>
+                                            Горизонтальная разметка может быть постоянной или временной. Для постоянной горизонтальной разметки (включая дублирование изображения дорожных знаков) установлены следующие цвета: белый, желтый, красный, синий, черный, зеленый. Для временной дорожной разметки установлен оранжевый цвет (кроме разметки <a href="/marks/1#1.4">1.4</a>
+                                            , <a href="/marks/1#1.10">1.10</a>
+                                            , <a href="/marks/1#1.17.1">1.17.1</a>
+                                            , <a href="/marks/1#1.17.2">1.17.2</a>
+                                            и <a href="/marks/1#1.26">1.26</a>
+                                            )* (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                        </p>
+                                        <p>* Цвета разметки соответствуют ГОСТу Р 51256-2018. (сноска введена Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                        <p>Горизонтальная разметка: </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.1"></a>
+                                                <img src="./photoTheory/signs/h1.1.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.1*" class="paragraph">1.1*</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Разделяет транспортные потоки противоположных направлений и обозначает границы полос движения в опасных местах на дорогах; обозначает границы стояночных мест транспортных средств; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                        <p>* Нумерация разметки соответствует ГОСТу Р 51256-2018. (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.2"></a>
+                                                <img src="./photoTheory/signs/h1.2.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.2" class="paragraph">1.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает край проезжей части или границы участков проезжей части, на которые въезд запрещен; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.3"></a>
+                                                <img src="./photoTheory/signs/h1.3.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.3" class="paragraph">1.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Разделяет транспортные потоки противоположных направлений на дорогах с четырьмя и более полосами для движения в обоих направлениях, с двумя или тремя полосами - при ширине полос более 3,75 м; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.4"></a>
+                                                <img src="./photoTheory/signs/h1.4.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.4" class="paragraph">1.4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Цвет - желтый. Обозначает места, где запрещена остановка транспортных средств; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.5"></a>
+                                                <img src="./photoTheory/signs/h1.5.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.5" class="paragraph">1.5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Разделяет транспортные потоки противоположных направлений на дорогах, имеющих две или три полосы; обозначает границы полос движения при наличии двух и более полос, предназначенных для движения в одном направлении; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.6"></a>
+                                                <img src="./photoTheory/signs/h1.6.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.6" class="paragraph">1.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Предупреждает о приближении к разметке <a href="/marks/1#1.1">1.1</a>
+                                            или <a href="/marks/1#1.11">1.11,</a>
+                                            которая разделяет транспортные потоки противоположных или попутных направлений; 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.7"></a>
+                                                <img src="./photoTheory/signs/h1.7.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.7" class="paragraph">1.7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает полосы движения в пределах перекрестка или зону парковки. Разметка синего цвета обозначает, что зона парковки используется на платной основе; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.8"></a>
+                                                <img src="./photoTheory/signs/h1.8.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.8" class="paragraph">1.8</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает границу между полосой разгона или торможения и основной полосой проезжей части; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.9"></a>
+                                                <img src="./photoTheory/signs/h1.9.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.9" class="paragraph">1.9</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает границы полос движения, на которых осуществляется реверсивное регулирование; разделяет транспортные потоки противоположных направлений (при выключенных реверсивных светофорах) на дорогах, где осуществляется реверсивное регулирование; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.10"></a>
+                                                <img src="./photoTheory/signs/h1.10.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.10" class="paragraph">1.10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Цвет - желтый. Обозначает места, где запрещена стоянка транспортных средств; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.11"></a>
+                                                <img src="./photoTheory/signs/h1.11.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.11" class="paragraph">1.11</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Разделяет транспортные потоки противоположных или попутных направлений на участках дорог, где перестроение разрешено только из одной полосы; обозначает места, где необходимо разрешить движение только со стороны прерывистой линии (в местах разворота, въезда и выезда с прилегающей территории); </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.12"></a>
+                                                <img src="./photoTheory/signs/h1.12.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.12" class="paragraph">1.12</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Указывает место, где водитель должен остановиться при наличии знака 
+                                            <a href="/signs/2#2.5">
+                                                2.5 <img class="sign-icon" src="./photoTheory/signs/2.5.png" width="20" height="20">
+                                            </a>
+                                            или при запрещающем сигнале светофора (регулировщика); 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.13"></a>
+                                                <img src="./photoTheory/signs/h1.13.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.13" class="paragraph">1.13</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Указывает место, где водитель должен при необходимости остановиться, уступая дорогу транспортным средствам, движущимся по пересекаемой дороге; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <a name="1.14.1"></a>
+                                                            <img src="./photoTheory/signs/h1.14.1.png" width="186" height="360">
+                                                            <div class="code">
+                                                                <a href="#1.14.1" class="paragraph">1.14.1</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <a name="1.14.2"></a>
+                                                            <img src="./photoTheory/signs/h1.14.2.png" width="300" height="367">
+                                                            <div class="code">
+                                                                <a href="#1.14.2" class="paragraph">1.14.2</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <p>Обозначает пешеходный переход; стрелы разметки 1.14.2 указывают направление движения пешеходов; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.14.3"></a>
+                                                <img src="./photoTheory/signs/h1.14.3.png" width="300" height="163">
+                                                <div class="code">
+                                                    <a href="#1.14.3" class="paragraph">1.14.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает диагональный пешеходный переход; (абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.15"></a>
+                                                <img src="./photoTheory/signs/h1.15.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.15" class="paragraph">1.15</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает место, где велосипедная дорожка пересекает проезжую часть; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.16.1"></a>
+                                                <img src="./photoTheory/signs/h1.16.1.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.16.1" class="paragraph">1.16.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает островки, которые разделяют либо транспортные потоки противоположных направлений, либо места для стоянки транспортных средств (парковки) от велосипедных полос; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.16.2"></a>
+                                                <img src="./photoTheory/signs/h1.16.2.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.16.2" class="paragraph">1.16.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает островки, разделяющие транспортные потоки одного направления; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.16.3"></a>
+                                                <img src="./photoTheory/signs/h1.16.3.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.16.3" class="paragraph">1.16.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает направляющие островки в местах разделения или слияния транспортных потоков; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.17.1"></a>
+                                                <img src="./photoTheory/signs/h1.17.1.png" width="300" height="81">
+                                                <div class="code">
+                                                    <a href="#1.17.1" class="paragraph">1.17.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Цвет - желтый. Обозначает места остановок маршрутных транспортных средств и стоянок транспортных средств, используемых в качестве легковых такси; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.17.2"></a>
+                                                <img src="./photoTheory/signs/h1.17.2.png" width="240" height="130">
+                                                <div class="code">
+                                                    <a href="#1.17.2" class="paragraph">1.17.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Цвет - желтый. Обозначает места остановок трамваев, если посадка и высадка производятся с проезжей части или с посадочной площадки, расположенной на ней; (абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.18"></a>
+                                                <img src="./photoTheory/signs/h1.18.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.18" class="paragraph">1.18</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Указывает разрешенные на перекрестке направления движения по полосам. Разметка с изображением тупика наносится для указания того, что поворот на ближайшую проезжую часть запрещен; разметка, разрешающая поворот налево из крайней левой полосы, разрешает и разворот; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.19"></a>
+                                                <img src="./photoTheory/signs/h1.19.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.19" class="paragraph">1.19</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Предупреждает о приближении к сужению проезжей части (участку, где уменьшается число полос движения в данном направлении) или к линиям разметки <a href="/marks/1#1.1">1.1</a>
+                                            или <a href="/marks/1#1.11">1.11,</a>
+                                            разделяющим транспортные потоки противоположных направлений; 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.20"></a>
+                                                <img src="./photoTheory/signs/h1.20.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.20" class="paragraph">1.20</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Предупреждает о приближении к разметке <a href="/marks/1#1.13">1.13;</a>
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.21"></a>
+                                                <img src="./photoTheory/signs/h1.21.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.21" class="paragraph">1.21</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Предупреждает о приближении к разметке <a href="/marks/1#1.12">1.12,</a>
+                                            когда она применяется в сочетании со знаком 
+                                            <a href="/signs/2#2.5">
+                                                2.5 <img class="sign-icon" src="./photoTheory/signs/2.5.png" width="20" height="20">;
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.22"></a>
+                                                <img src="./photoTheory/signs/h1.22.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.22" class="paragraph">1.22</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает номер дороги; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.23.1"></a>
+                                                <img src="./photoTheory/signs/h1.23.1.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.23.1" class="paragraph">1.23.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначает специальную полосу для маршрутных транспортных средств; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.23.2"></a>
+                                                <img src="./photoTheory/signs/h1.23.2.png" width="160" height="160">
+                                                <div class="code">
+                                                    <a href="#1.23.2" class="paragraph">1.23.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="descritption">Обозначение пешеходной дорожки или пешеходной части дорожки, предназначенной для совместного движения пешеходов, лиц, использующих для передвижения средства индивидуальной мобильности, и велосипедистов; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.23.3"></a>
+                                                <img src="./photoTheory/signs/h1.23.3.png" width="160" height="160">
+                                                <div class="code">
+                                                    <a href="#1.23.3" class="paragraph">1.23.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="descritption">Обозначение велосипедной дорожки (части дорожки) или полосы; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.24.1"></a>
+                                                <img src="./photoTheory/signs/h1.24.1.png" width="160" height="160">
+                                                <div class="code">
+                                                    <a href="#1.24.1" class="paragraph">1.24.1</a>
+                                                </div>
+                                            </div>
+                                            <p>Дублирование предупреждающих дорожных знаков; </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                            <a name="1.24.2"></a>
+                                            <img src="./photoTheory/signs/h1.24.2.png" width="160" height="160">
+                                            <div class="code">1.24.2 </div>
+                                        </div>
+                                        <p>Дублирование запрещающих дорожных знаков; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                            <a name="1.24.3"></a>
+                                            <img src="./photoTheory/signs/h1.24.3.png" width="160" height="160">
+                                            <div class="code">1.24.3 </div>
+                                        </div>
+                                        <p>Дублирование дорожного знака "Инвалиды"; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.24.4"></a>
+                                                <img src="./photoTheory/signs/h1.24.4.png" width="160" height="160">
+                                                <div class="code">
+                                                    <a href="#1.24.4" class="paragraph">1.24.4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Дублирование дорожного знака "Фотовидеофиксация" и (или) обозначение участков дороги, на которых может осуществляться фотовидеофиксация; разметка 1.24.4 может применяться самостоятельно; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.24.5"></a>
+                                                <img src="./photoTheory/signs/h1.24.5.png" width="160" height="160">
+                                                <div class="code">
+                                                    <a href="#1.24.5" class="paragraph">1.24.5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Дублирование <a href="/signs/8#8.4.3.1">таблички 8.4.3.1</a>
+                                            ; разметка 1.24.5 может применяться самостоятельно; 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.24.6"></a>
+                                                <img src="./photoTheory/signs/h1.24.6.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.24.6" class="paragraph">1.24.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Дублирование дорожного 
+                                            <a href="/signs/5#5.33.1">
+                                                знака 5.33.1 "Велосипедная зона" <img class="sign-icon" src="./photoTheory/signs/5.33.1.png" width="13" height="20">
+                                            </a>
+                                            ; (разметка введена в редакции Постановления Правительства РФ от 04.12.2018 № 1478) 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.24.7"></a>
+                                                <img src="./photoTheory/signs/h1.24.7.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.24.7" class="paragraph">1.24.7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Дублирование дорожного 
+                                            <a href="/signs/8#8.9.3">
+                                                знака 8.9.3 "Стоянка только транспортных средств дипломатического корпуса" <img class="sign-icon" src="./photoTheory/signs/8.9.3.png" width="37" height="20">
+                                            </a>
+                                            ; (абзац введен Постановлением Правительства РФ от 04.12.2018 № 1478; в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.25"></a>
+                                                <img src="./photoTheory/signs/h1.25.png" width="300" height="50">
+                                                <div class="code">
+                                                    <a href="#1.25" class="paragraph">1.25</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначение искусственных неровностей по ГОСТу Р 52605-2006; </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.26"></a>
+                                                <img src="./photoTheory/signs/h1.26.png" width="160" height="139">
+                                                <div class="code">
+                                                    <a href="#1.26" class="paragraph">1.26</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Цвет - желтый. Обозначает участок перекрестка, на который запрещается выезжать, если впереди по пути следования образовался затор, который вынудит водителя остановиться, создав препятствие для движения транспортных средств в поперечном направлении, за исключением поворота направо или налево в случаях, установленных настоящими Правилами. Разметка может применяться самостоятельно либо совместно с дорожным <a href="/signs/1#1.35">знаком 1.35</a>
+                                            . 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Линии <a href="/marks/1#1.1">1.1,</a>
+                                            <a href="/marks/1#1.2">1.2</a>
+                                            и <a href="/marks/1#1.3">1.3</a>
+                                            пересекать запрещается. 
+                                        </p>
+                                        <p>
+                                            Линию <a href="/marks/1#1.2">1.2</a>
+                                            допускается пересекать для остановки транспортного средства на обочине и при выезде с нее в местах, где разрешена остановка или стоянка. 
+                                        </p>
+                                        <p>
+                                            Линии <a href="/marks/1#1.5">1.5</a>
+                                            — <a href="/marks/1#1.8">1.8</a>
+                                            пересекать разрешается с любой стороны. 
+                                        </p>
+                                        <p>
+                                            Линию <a href="/marks/1#1.9">1.9</a>
+                                            при отсутствии реверсивных светофоров или когда они отключены разрешается пересекать, если она расположена справа от водителя; при включенных реверсивных светофорах — с любой стороны, если она разделяет полосы, по которым движение разрешено в одном направлении. При отключении реверсивных светофоров водитель должен немедленно перестроиться вправо за линию <a href="/marks/1#1.9">разметки 1.9.</a>
+                                        </p>
+                                        <p>
+                                            Линию <a href="/marks/1#1.9">1.9,</a>
+                                            разделяющую транспортные потоки противоположных направлений, при выключенных реверсивных светофорах пересекать запрещается. 
+                                        </p>
+                                        <p>
+                                            Линию <a href="/marks/1#1.11">1.11</a>
+                                            разрешается пересекать со стороны прерывистой линии, а также и со стороны сплошной линии, но только при завершении обгона или объезда. 
+                                        </p>
+                                        <p>В случаях если значения дорожных знаков, в том числе временных, и линий горизонтальной разметки противоречат друг другу либо разметка недостаточно различима, водители должны руководствоваться дорожными знаками. В случаях если линии временной разметки и линии постоянной разметки противоречат друг другу, водители должны руководствоваться линиями временной разметки. </p>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="next">
+                                        <a href="./line2.html">Дальше </a>
+                                        → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="banner-mobile"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</html>

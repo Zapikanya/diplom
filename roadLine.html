@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="roadLine.css">
+ 
+  
+</head>
+<body class="main-body">
+  <div class = 'main-menu'>
+  <div class="menu-header"><a href="theory.html"><div class="arrow"></div></a><p>Дорожная разметка</p></div>
+  
+    <div class = 'main-buttons'>
+      <a href="./line1.html" class="button">1. Горизонтальная разметка</a><br>
+      <a href="./line2.html" class="button">2. Вертикальная разметка</a>
+      
+      
+    </div>
+  </div>
+  <script>
+    var height = document.documentElement.clientHeight;
+  document.querySelector(".main-menu").style.height = height + "px";
+  window.addEventListener('resize', (e) => {
+    var height = document.documentElement.clientHeight;
+  document.querySelector(".main-menu").style.height = height + "px";
+});
+
+  </script>
+
+  
+</body>
+</html>

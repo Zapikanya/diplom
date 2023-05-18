@@ -1,0 +1,223 @@
+.main-body {
+    background: rgb(46, 16, 65);
+  background: linear-gradient(0deg, rgb(56, 11, 84) 0%, rgba(46,40,99,1) 100%);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+ 
+  .block-photo{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    min-height: 100px;
+    background-color: #d7d7d7;
+    border-radius: 10px 10px 0 0;
+    font-size:20px;
+    font-family: 'Roboto-Regular';
+    text-align: center;
+    color: rgb(132, 132, 132);
+    
+  }
+
+.block-text{
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    
+    background-color: #d7d7d7;
+    font-size:20px;
+    font-family: 'Roboto-Regular';
+    text-align: start;
+    border-radius:  0 0 10px 10px;
+  }
+  .text {
+
+    padding: 10px;
+    color: black;
+  }
+  .main-buttons {
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+  }
+  .button{
+    background-color: #d7d7d7;
+    padding: 15px;
+    text-align: start;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    width: 750px;
+    font-family: 'Roboto-Regular';
+    margin-bottom: 20px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  button:hover{
+    box-shadow: 0 0 40px 40px #b5b5b5 inset;
+  }
+  
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+   
+  }
+  
+  .menu-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Roboto-Thin';
+    
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 10px;
+    
+    margin-bottom: 0;
+  }
+  
+  p{
+    margin: 0;
+  }
+  
+  
+  
+  
+
+
+   /*  анимация стрелочки */
+  .arrow{
+    box-sizing: border-box;
+    position:relative;
+    width:63px;
+    height: 63px;
+    cursor:pointer;
+  /*   border:solid 1px white; */
+    transition:0.5s;
+    overflow:hidden;
+  }
+  
+  .arrow:hover{
+  /*  animation:borderAni 5s cubic-bezier(0, 0.6, 1, 0.4); */
+        border:solid 3px #00A7CC; 
+      border-radius:50%;
+  }
+  .arrow:after{
+    position:absolute;
+    display:block;
+    content:"";
+    color:#00A7CC;
+    width: 40px;
+    height: 29px;
+  /*   border:solid 1px;  */
+    top:-1px;
+    border-bottom:solid 8px;
+    transform:translatex(10px);
+  }
+  
+  .arrow:before{
+    position:absolute;
+    display:block;
+    content:"";
+    color:#00A7CC;
+    width: 15px;
+    height: 15px;
+  /*   border:solid 1px;  */
+    border-top:solid 8px;
+    border-left:solid 8px;
+    top:52%;
+    left:2px;
+    transform-origin:0% 0%;
+    transform:rotatez(-45deg);
+  
+  }
+  .arrow:hover:before{
+   animation: aniArrow01 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+  }
+  
+  .arrow:hover:after{
+   animation: aniArrow02 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+  }
+  
+  
+  @keyframes aniArrow01 {
+    0% {
+      transform:rotatez(-45deg) translateY(25px) translateX(25px);
+    }
+    100% {
+      transform: rotatez(-45deg) translateY(-34px) translateX(-34px);
+    }
+  }
+  
+  
+  @keyframes aniArrow02 {
+    0% {
+      transform:translateX(45px);
+    }
+    100% {
+      transform:translateX(-40px);
+    }
+  }
+  
+  @keyframes borderAni{
+     0% {
+      border:solid 2px white;
+    }
+    100% {    
+      border:solid 2px white; 
+      border-radius:50%;
+    }
+  }
+
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url(Roboto/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(Roboto/Roboto-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Roboto-Thin";
+    src: url(Roboto/Roboto-Thin.ttf);
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(46, 16, 65);
+    margin-top: 20px;        
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(46,40,99,1);    
+    border-radius: 20px;       
+    border: 1px solid rgb(99, 86, 214);  
+  }
+  
+
+  .button-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: transparent;
+    border: 0;
+    color: white;
+    font-family: 'Roboto-Regular';
+  }
+

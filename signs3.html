@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="date" content="01.05.2023 04:43:42">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+       
+        <link rel="stylesheet" href="text.css">
+        
+    </head>
+    <body>
+        <div class="spritesheet">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-back" viewBox="0 0 24 24">
+                    <title>back</title>
+                    <path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/>
+                    <path d="M17.51 3.87 15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
+                </symbol>
+                
+            </svg>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div id="app">
+                    <div class="navbar" id="navbar">
+                        <div class="left">
+                            <a href="./roadSigns.html">
+                                <svg>
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="title">Правила</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="content-inner">
+                        <div class="static" v-pre>
+                            <div class="rule" id="rule">
+                                <h1>3. Запрещающие знаки</h1>
+                                <div class="text">
+                                    <div>
+                                        <p>Запрещающие знаки вводят или отменяют определенные ограничения движения. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.1"></a>
+                                                <img src="./photoTheory/signs/3.1.png" width="89" height="90">
+                                                <div class="code">
+                                                    <a href="#3.1" class="paragraph">3.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Въезд запрещен </div>
+                                        <p>
+                                            Запрещается въезд всех транспортных средств в данном направлении. Знак 3.1 может быть применен совместно с табличками 
+                                            <a href="/signs/8#8.4.1">
+                                                8.4.1 - 8.4.8 <img class="sign-icon" src="./photoTheory/signs/8.4.1.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.2.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.3.1.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.4.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.5.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.6.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.7.2.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.8.png" width="39" height="20">
+                                            </a>
+                                            , 
+                                            <a href="/signs/8#8.5.1">
+                                                8.5.1 - 8.5.7 <img class="sign-icon" src="./photoTheory/signs/8.5.1.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.5.2.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.5.3.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.5.4.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.5.5.png" width="38" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.5.6.png" width="39" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.5.7.png" width="38" height="20">
+                                            </a>
+                                            и 
+                                            <a href="/signs/8#8.4.9">
+                                                8.4.9 - 8.4.16 <img class="sign-icon" src="./photoTheory/signs/8.4.9.png" width="25" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.10.png" width="25" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.11.png" width="25" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.12.png" width="25" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.13.png" width="25" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.14.png" width="25" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.15.png" width="29" height="20">
+                                                <img class="sign-icon" src="./photoTheory/signs/8.4.16.png" width="28" height="20">
+                                            </a>
+                                            . (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.2"></a>
+                                                <img src="./photoTheory/signs/3.2.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.2" class="paragraph">3.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение запрещено </div>
+                                        <p>Запрещается движение всех транспортных средств. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.3"></a>
+                                                <img src="./photoTheory/signs/3.3.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.3" class="paragraph">3.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение механических транспортных средств запрещено </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.4"></a>
+                                                <img src="./photoTheory/signs/3.4.png" width="91" height="88">
+                                                <div class="code">
+                                                    <a href="#3.4" class="paragraph">3.4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение грузовых автомобилей запрещено </div>
+                                        <p>Запрещается движение грузовых автомобилей и составов транспортных средств с разрешенной максимальной массой более 3,5 т (если на знаке не указана масса) или с разрешенной максимальной массой более указанной на знаке, а также тракторов и самоходных машин. </p>
+                                        <div>
+                                            <p>
+                                                <a href="/signs/3#3.4">Знак 3.4</a>
+                                                не запрещает движение грузовых автомобилей, предназначенных для перевозки людей, транспортных средств организаций федеральной почтовой связи, имеющих на боковой поверхности белую диагональную полосу на синем фоне, эмблему организаций федеральной почтовой связи, надпись "Почта России", а также грузовых автомобилей без прицепа с разрешенной максимальной массой не более 26 тонн, которые обслуживают предприятия, находящиеся в обозначенной зоне. В этих случаях транспортные средства должны въезжать в обозначенную зону и выезжать из нее на ближайшем к месту назначения перекрестке. (в ред. Постановлений Правительства РФ от 21.04.2000 № 370, от 19.12.2014 № 1423, от 06.10.2022 № 1769) 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.5"></a>
+                                                <img src="./photoTheory/signs/3.5.png" width="91" height="88">
+                                                <div class="code">
+                                                    <a href="#3.5" class="paragraph">3.5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение мотоциклов запрещено </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.6"></a>
+                                                <img src="./photoTheory/signs/3.6.png" width="91" height="88">
+                                                <div class="code">
+                                                    <a href="#3.6" class="paragraph">3.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение тракторов запрещено </div>
+                                        <p>Запрещается движение тракторов и самоходных машин. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.7"></a>
+                                                <img src="./photoTheory/signs/3.7.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.7" class="paragraph">3.7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение с прицепом запрещено </div>
+                                        <p>Запрещается движение грузовых автомобилей и тракторов с прицепами любого типа, а также буксировка механических транспортных средств. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.8"></a>
+                                                <img src="./photoTheory/signs/3.8.png" width="91" height="88">
+                                                <div class="code">
+                                                    <a href="#3.8" class="paragraph">3.8</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение гужевых повозок запрещено </div>
+                                        <p>Запрещается движение гужевых повозок (саней), верховых и вьючных животных, а также прогон скота. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.9"></a>
+                                                <img src="./photoTheory/signs/3.9.png" width="91" height="88">
+                                                <div class="code">
+                                                    <a href="#3.9" class="paragraph">3.9</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение на велосипедах запрещено </div>
+                                        <p>Запрещается движение велосипедистов и мопедов. (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.10"></a>
+                                                <img src="./photoTheory/signs/3.10.png" width="90" height="89">
+                                                <div class="code">
+                                                    <a href="#3.10" class="paragraph">3.10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение пешеходов запрещено </div>
+                                        <p>Запрещается движение пешеходов, а также лиц, использующих для передвижения средства индивидуальной мобильности. (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.11"></a>
+                                                <img src="./photoTheory/signs/3.11.png" width="90" height="88">
+                                                <div class="code">
+                                                    <a href="#3.11" class="paragraph">3.11</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение массы </div>
+                                        <p>Запрещается движение транспортных средств, в том числе составов транспортных средств, общая фактическая масса которых больше указанной на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.12"></a>
+                                                <img src="./photoTheory/signs/3.12.png" width="90" height="89">
+                                                <div class="code">
+                                                    <a href="#3.12" class="paragraph">3.12</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение массы, приходящейся на ось транспортного средства </div>
+                                        <p>Запрещается движение транспортных средств, у которых фактическая масса, приходящаяся на какую-либо ось, превышает указанную на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.13"></a>
+                                                <img src="./photoTheory/signs/3.13.png" width="90" height="89">
+                                                <div class="code">
+                                                    <a href="#3.13" class="paragraph">3.13</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение высоты </div>
+                                        <p>Запрещается движение транспортных средств, габаритная высота которых (с грузом или без груза) больше указанной на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.14"></a>
+                                                <img src="./photoTheory/signs/3.14.png" width="90" height="88">
+                                                <div class="code">
+                                                    <a href="#3.14" class="paragraph">3.14</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение ширины </div>
+                                        <p>Запрещается движение транспортных средств, габаритная ширина которых (с грузом или без груза) больше указанной на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.15"></a>
+                                                <img src="./photoTheory/signs/3.15.png" width="90" height="88">
+                                                <div class="code">
+                                                    <a href="#3.15" class="paragraph">3.15</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение длины </div>
+                                        <p>Запрещается движение транспортных средств (составов транспортных средств), габаритная длина которых (с грузом или без груза) больше указанной на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.16"></a>
+                                                <img src="./photoTheory/signs/3.16.png" width="90" height="88">
+                                                <div class="code">
+                                                    <a href="#3.16" class="paragraph">3.16</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение минимальной дистанции </div>
+                                        <p>Запрещается движение транспортных средств с дистанцией между ними меньше указанной на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.17.1"></a>
+                                                <img src="./photoTheory/signs/3.17.1.png" width="88" height="88">
+                                                <div class="code">
+                                                    <a href="#3.17.1" class="paragraph">3.17.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Таможня </div>
+                                        <p>Запрещается проезд без остановки у таможни (контрольного пункта). </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.17.2"></a>
+                                                <img src="./photoTheory/signs/3.17.2.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.17.2" class="paragraph">3.17.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Опасность </div>
+                                        <p>Запрещается дальнейшее движение всех без исключения транспортных средств в связи с дорожно-транспортным происшествием, аварией, пожаром или другой опасностью. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.17.3"></a>
+                                                <img src="./photoTheory/signs/3.17.3.png" width="95" height="96">
+                                                <div class="code">
+                                                    <a href="#3.17.3" class="paragraph">3.17.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Контроль </div>
+                                        <p>Запрещается проезд без остановки через контрольные пункты. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.18.1"></a>
+                                                <img src="./photoTheory/signs/3.18.1.png" width="90" height="88">
+                                                <div class="code">
+                                                    <a href="#3.18.1" class="paragraph">3.18.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Поворот направо запрещен </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.18.2"></a>
+                                                <img src="./photoTheory/signs/3.18.2.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.18.2" class="paragraph">3.18.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Поворот налево запрещен </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.19"></a>
+                                                <img src="./photoTheory/signs/3.19.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.19" class="paragraph">3.19</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Разворот запрещен </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.20"></a>
+                                                <img src="./photoTheory/signs/3.20.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.20" class="paragraph">3.20</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Обгон запрещен </div>
+                                        <div>
+                                            <p>Запрещается обгон всех транспортных средств, кроме тихоходных транспортных средств, гужевых повозок, велосипедов, мопедов и двухколесных мотоциклов без бокового прицепа. (абзац изменён в редакции Постановления Правительства РФ от 24.10.2014 г. N 1097) </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.21"></a>
+                                                <img src="./photoTheory/signs/3.21.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.21" class="paragraph">3.21</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны запрещения обгона </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.22"></a>
+                                                <img src="./photoTheory/signs/3.22.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.22" class="paragraph">3.22</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Обгон грузовым автомобилям запрещен </div>
+                                        <p>Запрещается грузовым автомобилям с разрешенной максимальной массой более 3,5 т обгон всех транспортных средств. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.23"></a>
+                                                <img src="./photoTheory/signs/3.23.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#3.23" class="paragraph">3.23</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны запрещения обгона грузовым автомобилям </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.24"></a>
+                                                <img src="./photoTheory/signs/3.24.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.24" class="paragraph">3.24</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Ограничение максимальной скорости </div>
+                                        <p>Запрещается движение со скоростью (км/ч), превышающей указанную на знаке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.25"></a>
+                                                <img src="./photoTheory/signs/3.25.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.25" class="paragraph">3.25</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны ограничения максимальной скорости </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.26"></a>
+                                                <img src="./photoTheory/signs/3.26.png" width="90" height="88">
+                                                <div class="code">
+                                                    <a href="#3.26" class="paragraph">3.26</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Подача звукового сигнала запрещена </div>
+                                        <p>Запрещается пользоваться звуковыми сигналами, кроме тех случаев, когда сигнал подается для предотвращения дорожно-транспортного происшествия. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.27"></a>
+                                                <img src="./photoTheory/signs/3.27.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.27" class="paragraph">3.27</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Остановка запрещена </div>
+                                        <p>Запрещаются остановка и стоянка транспортных средств. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.28"></a>
+                                                <img src="./photoTheory/signs/3.28.png" width="89" height="89">
+                                                <div class="code">
+                                                    <a href="#3.28" class="paragraph">3.28</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Стоянка запрещена </div>
+                                        <p>Запрещается стоянка транспортных средств. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.29"></a>
+                                                <img src="./photoTheory/signs/3.29.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.29" class="paragraph">3.29</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Стоянка запрещена по нечетным числам месяца </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.30"></a>
+                                                <img src="./photoTheory/signs/3.30.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.30" class="paragraph">3.30</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Стоянка запрещена по четным числам месяца </div>
+                                        <p>
+                                            При одновременном применении <a href="/signs/3#3.29">знаков 3.29</a>
+                                            и 3.30 на противоположных сторонах проезжей части разрешается стоянка на обеих сторонах проезжей части с 21 часа до 24 часов (время перестановки). (в ред. Постановлений Правительства РФ от 14.12.2005 № 767, от 06.10.2022 № 1769) 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.31"></a>
+                                                <img src="./photoTheory/signs/3.31.png" width="89" height="88">
+                                                <div class="code">
+                                                    <a href="#3.31" class="paragraph">3.31</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны всех ограничений </div>
+                                        <p>
+                                            Обозначение конца зоны действия одновременно нескольких знаков из следующих: <a href="/signs/3#3.16">3.16,</a>
+                                            <a href="/signs/3#3.20">3.20,</a>
+                                            <a href="/signs/3#3.22">3.22,</a>
+                                            <a href="/signs/3#3.24">3.24,</a>
+                                            <a href="/signs/3#3.26">3.26 — 3.30.</a>
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.32"></a>
+                                                <img src="./photoTheory/signs/3.32.png" width="97" height="96">
+                                                <div class="code">
+                                                    <a href="#3.32" class="paragraph">3.32</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение транспортных средств с опасными грузами запрещено </div>
+                                        <p>
+                                            Запрещается движение транспортных средств, оборудованных опознавательными <span>знаками</span>
+                                            (информационными табличками) «Опасный груз». 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.33"></a>
+                                                <img src="./photoTheory/signs/3.33.png" width="92" height="93">
+                                                <div class="code">
+                                                    <a href="#3.33" class="paragraph">3.33</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение транспортных средств с взрывчатыми и легковоспламеняющимися грузами запрещено </div>
+                                        <p>Запрещается движение транспортных средств, осуществляющих перевозку взрывчатых веществ и изделий, а также других опасных грузов, подлежащих маркировке как легковоспламеняющиеся, кроме случаев перевозки указанных опасных веществ и изделий в ограниченном количестве, определяемом в порядке, установленном специальными правилами перевозки. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.34"></a>
+                                                <img src="./photoTheory/signs/3.34.png" width="92" height="92">
+                                                <div class="code">
+                                                    <a href="#3.34" class="paragraph">3.34</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение автобусов запрещено </div>
+                                        <p>(абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="3.35"></a>
+                                                <img src="./photoTheory/signs/3.35.png" width="92" height="92">
+                                                <div class="code">
+                                                    <a href="#3.35" class="paragraph">3.35</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Движение на средствах индивидуальной мобильности запрещено </div>
+                                        <p>(абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <p>
+                                        <a href="/signs/3#3.2">Знаки 3.2 — 3.9,</a>
+                                        <a href="/signs/3#3.32">3.32 - 3.34</a>
+                                        запрещают движение соответствующих видов транспортных средств в обоих направлениях. (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                    </p>
+                                    <p>Действие знаков не распространяется: </p>
+                                    <p>
+                                        <a href="/signs/3#3.1">3.1 — 3.3,</a>
+                                        <a href="/signs/3#3.18.1">3.18.1,</a>
+                                        <a href="/signs/3#3.18.2">3.18.2,</a>
+                                        <a href="/signs/3#3.19">3.19</a>
+                                        и <a href="/signs/3#3.34">3.34</a>
+                                        — на маршрутные транспортные средства (в ред. Постановлений Правительства РФ от 12.07.2017 № 832, от 06.10.2022 № 1769); 
+                                    </p>
+                                    <p>
+                                        <a href="/signs/3#3.2">3.2</a>
+                                        , <a href="/signs/3#3.3">3.3</a>
+                                        , <a href="/signs/3#3.5">3.5 — 3.8</a>
+                                        — на транспортные средства организаций федеральной почтовой связи, имеющие на боковой поверхности белую диагональную полосу на синем фоне, эмблему организаций федеральной почтовой связи, надпись "Почта России", и транспортные средства, которые обслуживают предприятия, находящиеся в обозначенной зоне, а также обслуживают граждан или принадлежат гражданам, проживающим или работающим в обозначенной зоне. В этих случаях транспортные средства должны въезжать в обозначенную зону и выезжать из нее на ближайшем к месту назначения перекрестке; (в ред. Постановлений Правительства РФ от 21.04.2000 № 370, от 23.07.2013 № 621) 
+                                    </p>
+                                    <p>
+                                        <a name="3.28.inv.exception"></a>
+                                        <a href="/signs/3#3.28">3.28 — 3.30</a>
+                                        — на транспортные средства, управляемые инвалидами, которым в соответствии с Федеральным законом "О социальной защите инвалидов в Российской Федерации" предоставлено право на бесплатное использование мест для парковки транспортных средств, перевозящие таких инвалидов и (или) детей-инвалидов, если на указанных транспортных средствах установлен опознавательный знак "Инвалид", а также на транспортные средства организаций федеральной почтовой связи, имеющие на боковой поверхности белую диагональную полосу на синем фоне, эмблему организаций федеральной почтовой связи, надпись "Почта России", и на легковые такси с включенным таксометром; (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                    </p>
+                                    <p>
+                                        <a name="3.2.inv.exception"></a>
+                                        <a href="/signs/3#3.2">3.2</a>
+                                        , <a href="/signs/3#3.3">3.3</a>
+                                        — на транспортные средства, управляемые инвалидами I и II групп, перевозящие таких инвалидов и (или) детей-инвалидов, если на указанных транспортных средствах установлен опознавательный знак «Инвалид»; (в ред. Постановлений Правительства РФ от 24.11.2018 № 1414, от 06.10.2022 № 1769) 
+                                    </p>
+                                    <p>
+                                        <a href="/signs/3#3.27">3.27</a>
+                                        — на маршрутные транспортные средства и транспортные средства, используемые в качестве легкового такси, в местах остановки маршрутных транспортных средств или стоянки транспортных средств, используемых в качестве легкового такси, обозначенных разметкой 
+                                        <a href="/marks/1#1.17.1">
+                                            1.17.1 <img class="sign-icon" src="./photoTheory/signs/h1.17.1.png" width="73" height="20">
+                                        </a>
+                                        и (или) знаками <a href="/signs/5#5.16">5.16 - 5.18</a>
+                                        соответственно; (абзац введен Постановлением Правительства РФ от 12.07.2017 № 832; в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                    </p>
+                                    <p>
+                                        <a href="/signs/3#3.34">3.34</a>
+                                        — на школьные автобусы. (абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) 
+                                    </p>
+                                    <p>
+                                        Действие <a href="/signs/3#3.18.1">знаков 3.18.1,</a>
+                                        <a href="/signs/3#3.18.2">3.18.2</a>
+                                        распространяется на пересечение проезжих частей, перед которыми установлен знак. 
+                                    </p>
+                                    <p>
+                                        Зона действия <a href="/signs/3#3.16">знаков 3.16,</a>
+                                        <a href="/signs/3#3.20">3.20,</a>
+                                        <a href="/signs/3#3.22">3.22,</a>
+                                        <a href="/signs/3#3.24">3.24,</a>
+                                        <a href="/signs/3#3.26">3.26 — 3.30</a>
+                                        распространяется от места установки знака до ближайшего перекрестка за ним, а в населенных пунктах при отсутствии перекрестка — до конца населенного пункта. Действие знаков не прерывается в местах выезда с прилегающих к дороге территорий и в местах пересечения (примыкания) с полевыми, лесными и другими второстепенными дорогами, перед которыми не установлены соответствующие знаки. 
+                                    </p>
+                                    <p>
+                                        Действие <a href="/signs/3#3.24">знака 3.24,</a>
+                                        установленного перед населенным пунктом, обозначенным <a href="/signs/5#5.23.1">знаком 5.23.1</a>
+                                        или <a href="/signs/5#5.23.2">5.23.2,</a>
+                                        распространяется до этого знака. 
+                                    </p>
+                                    <p>Зона действия знаков может быть уменьшена: </p>
+                                    <p>
+                                        для <a href="/signs/3#3.16">знаков 3.16</a>
+                                        и <a href="/signs/3#3.26">3.26</a>
+                                        применением <a href="/signs/8#8.2.1">таблички 8.2.1;</a>
+                                    </p>
+                                    <p>
+                                        для <a href="/signs/3#3.20">знаков 3.20,</a>
+                                        <a href="/signs/3#3.22">3.22,</a>
+                                        <a href="/signs/3#3.24">3.24</a>
+                                        установкой в конце зоны их действия соответственно <a href="/signs/3#3.21">знаков 3.21,</a>
+                                        <a href="/signs/3#3.23">3.23,</a>
+                                        <a href="/signs/3#3.25">3.25</a>
+                                        или применением <a href="/signs/8#8.2.1">таблички 8.2.1.</a>
+                                        Зона действия <a href="/signs/3#3.24">знака 3.24</a>
+                                        может быть уменьшена установкой <a href="/signs/3#3.24">знака 3.24</a>
+                                        с другим значением максимальной скорости движения; 
+                                    </p>
+                                    <p>
+                                        для <a href="/signs/3#3.27">знаков 3.27 — 3.30</a>
+                                        установкой в конце зоны их действия повторных <a href="/signs/3#3.27">знаков 3.27 — 3.30</a>
+                                        с <a href="/signs/8#8.2.3">табличкой 8.2.3</a>
+                                        или применением <a href="/signs/8#8.2.2">таблички 8.2.2.</a>
+                                        , а также установкой знака <a href="/signs/5#5.29">5.29</a>
+                                        или <a href="/signs/6#6.4">6.4.</a>
+                                        (в ред. Постановлений Правительства РФ от 14.12.2005 № 767, от 06.10.2022 № 1769) 
+                                    </p>
+                                    <p>
+                                        Действие <a href="/signs/3#3.10">знаков 3.10</a>
+                                        , <a href="/signs/3#3.27">3.27 — 3.30</a>
+                                        распространяется только на ту сторону дороги, на которой они установлены. 
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="next">
+                                        <a href="./signs4.html">Дальше </a>
+                                        → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="banner-mobile"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</html>

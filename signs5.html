@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="date" content="01.05.2023 04:43:42">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+       
+        <link rel="stylesheet" href="text.css">
+        
+    </head>
+    <body>
+        <div class="spritesheet">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-back" viewBox="0 0 24 24">
+                    <title>back</title>
+                    <path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/>
+                    <path d="M17.51 3.87 15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
+                </symbol>
+                
+            </svg>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div id="app">
+                    <div class="navbar" id="navbar">
+                        <div class="left">
+                            <a href="./roadSigns.html">
+                                <svg>
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="title">Правила</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="content-inner">
+                        <div class="static" v-pre>
+                            <div class="rule" id="rule">
+                                <h1>5. Знаки особых предписаний</h1>
+                                <div class="text">
+                                    <div>
+                                        <p>Знаки особых предписаний вводят или отменяют определенные режимы движения. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.1"></a>
+                                                <img src="./photoTheory/signs/5.1.png" width="92" height="139">
+                                                <div class="code">
+                                                    <a href="#5.1" class="paragraph">5.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Автомагистраль </div>
+                                        <p>
+                                            Дорога, на которой действуют требования <a href="/rules/16#16.1">Правил</a>
+                                            дорожного движения Российской Федерации, устанавливающие порядок движения по автомагистралям. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.2"></a>
+                                                <img src="./photoTheory/signs/5.2.png" width="92" height="139">
+                                                <div class="code">
+                                                    <a href="#5.2" class="paragraph">5.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец автомагистрали </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.3"></a>
+                                                <img src="./photoTheory/signs/5.3.png" width="92" height="128">
+                                                <div class="code">
+                                                    <a href="#5.3" class="paragraph">5.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дорога для автомобилей </div>
+                                        <p>Дорога, предназначенная для движения только автомобилей, автобусов и мотоциклов. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.4"></a>
+                                                <img src="./photoTheory/signs/5.4.png" width="92" height="131">
+                                                <div class="code">
+                                                    <a href="#5.4" class="paragraph">5.4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец дороги для автомобилей </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.5"></a>
+                                                <img src="./photoTheory/signs/5.5.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.5" class="paragraph">5.5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дорога с односторонним движением </div>
+                                        <p>Дорога или проезжая часть, по которой движение механических транспортных средств по всей ширине осуществляется в одном направлении. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.6"></a>
+                                                <img src="./photoTheory/signs/5.6.png" width="96" height="94">
+                                                <div class="code">
+                                                    <a href="#5.6" class="paragraph">5.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец дороги с односторонним движением </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.7.1"></a>
+                                                <img src="./photoTheory/signs/5.7.1.png" width="160" height="56">
+                                                <div class="code">
+                                                    <a href="#5.7.1" class="paragraph">5.7.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.7.2"></a>
+                                                <img src="./photoTheory/signs/5.7.2.png" width="163" height="56">
+                                                <div class="code">
+                                                    <a href="#5.7.2" class="paragraph">5.7.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Выезд на дорогу с односторонним движением </div>
+                                        <p>Выезд на дорогу или проезжую часть с односторонним движением. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.8"></a>
+                                                <img src="./photoTheory/signs/5.8.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.8" class="paragraph">5.8</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Реверсивное движение </div>
+                                        <p>Начало участка дороги, на котором на одной или нескольких полосах направление движения может изменяться на противоположное. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.9"></a>
+                                                <img src="./photoTheory/signs/5.9.png" width="96" height="95">
+                                                <div class="code">
+                                                    <a href="#5.9" class="paragraph">5.9</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец реверсивного движения </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.10"></a>
+                                                <img src="./photoTheory/signs/5.10.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.10" class="paragraph">5.10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Выезд на дорогу с реверсивным движением </div>
+                                    </div>
+                                    <div class="w-container sign class">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.11.1"></a>
+                                                <img src="./photoTheory/signs/5.11.1.png" width="96" height="95">
+                                                <div class="code">
+                                                    <a href="#5.11.1" class="paragraph">5.11.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дорога с полосой для маршрутных транспортных средств </div>
+                                        <p>Дорога, по которой транспортные средства, допущенные к движению по полосам для маршрутных транспортных средств, движутся по специально выделенной полосе навстречу общему потоку транспортных средств. (абзац изменён в редакции Постановления Правительства РФ от 04.12.2018 № 1478) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.11.2"></a>
+                                                <img src="./photoTheory/signs/5.11.2.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.11.2" class="paragraph">5.11.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дорога с полосой для велосипедистов </div>
+                                        <p>Дорога, по которой движение велосипедистов, лиц, использующих для передвижения средства индивидуальной мобильности, и водителей мопедов осуществляется по специально выделенной полосе навстречу общему потоку транспортных средств. (абзац введен Постановлением Правительства РФ от 22.03.2014 № 221; в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.12.1"></a>
+                                                <img src="./photoTheory/signs/5.12.1.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.12.1" class="paragraph">5.12.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец дороги с полосой для маршрутных транспортных средств </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.12.2"></a>
+                                                <img src="./photoTheory/signs/5.12.2.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.12.2" class="paragraph">5.12.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец дороги с полосой для велосипедистов </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.13.1"></a>
+                                                <img src="./photoTheory/signs/5.13.1.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.13.1" class="paragraph">5.13.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.13.2"></a>
+                                                <img src="./photoTheory/signs/5.13.2.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.13.2" class="paragraph">5.13.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Выезд на дорогу с полосой для маршрутных транспортных средств </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.13.3"></a>
+                                                <img src="./photoTheory/signs/5.13.3.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.13.3" class="paragraph">5.13.3</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.13.4"></a>
+                                                <img src="./photoTheory/signs/5.13.4.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.13.4" class="paragraph">5.13.4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Выезд на дорогу с полосой для велосипедистов </div>
+                                        <p>Введено в редакции Постановления Правительства РФ от 22.03.2014 № 221 </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.14.1"></a>
+                                                <img src="./photoTheory/signs/5.14.1.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.14.1" class="paragraph">5.14.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Полоса для маршрутных транспортных средств </div>
+                                        <p>Специально выделенная полоса, по которой транспортные средства, допущенные к движению по полосам для маршрутных транспортных средств, движутся попутно общему потоку транспортных средств. (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div>
+                                        <div class="w-container sign">
+                                            <div class="w-row align-center">
+                                                <div>
+                                                    <a name="5.14.2"></a>
+                                                    <img src="./photoTheory/signs/5.14.2.png" width="96" height="95">
+                                                    <div class="code">
+                                                        <a href="#5.14.2" class="paragraph">5.14.2</a>
+                                                    </div>
+                                                </div>
+                                                <div class="name">Полоса для велосипедистов </div>
+                                                <p>(введен Постановлением Правительства РФ от 02.04.2015 № 315)</p>
+                                            </div>
+                                        </div>
+                                        <div class="w-container sign">
+                                            <div class="w-row align-center">
+                                                <div>
+                                                    <a name="5.14.3"></a>
+                                                    <img src="./photoTheory/signs/5.14.3.png" width="96" height="96">
+                                                    <div class="code">
+                                                        <a href="#5.14.3" class="paragraph">5.14.3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="name">Конец полосы для маршрутных транспортных средств </div>
+                                            <p>(в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                        </div>
+                                        <div class="w-container sign">
+                                            <div class="w-row align-center">
+                                                <div>
+                                                    <a name="5.14.4"></a>
+                                                    <img src="./photoTheory/signs/5.14.4.png" width="96" height="95">
+                                                    <div class="code">
+                                                        <a href="#5.14.4" class="paragraph">5.14.4</a>
+                                                    </div>
+                                                </div>
+                                                <div class="name">Конец полосы для велосипедистов </div>
+                                                <p>(в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                            </div>
+                                            <p>Действие знаков 5.14.1 - 5.14.4 распространяется на полосу, над которой они расположены. Действие знаков, установленных справа от дороги, распространяется на правую полосу. (абзац введен Постановлением Правительства РФ от 02.04.2015 № 315; в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.1"></a>
+                                                <img src="./photoTheory/signs/5.15.1.png" width="224" height="112">
+                                                <div class="code">
+                                                    <a href="#5.15.1" class="paragraph">5.15.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Направления движения по полосам </div>
+                                        <p>Число полос и разрешенные направления движения по каждой из них. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.2"></a>
+                                                <img src="./photoTheory/signs/5.15.2.png" width="300" height="56">
+                                                <div class="code">
+                                                    <a href="#5.15.2" class="paragraph">5.15.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Направления движения по полосе </div>
+                                        <p>Разрешенные направления движения по полосе. </p>
+                                        <p>
+                                            <a href="/signs/5#5.15.1">Знаки 5.15.1</a>
+                                            и <a href="/signs/5#5.15.2">5.15.2,</a>
+                                            разрешающие поворот налево из крайней левой полосы, разрешают и разворот из этой полосы. 
+                                        </p>
+                                        <p>
+                                            Действие <a href="/signs/5#5.15.1">знаков 5.15.1</a>
+                                            и <a href="/signs/5#5.15.2">5.15.2</a>
+                                            не распространяется на маршрутные транспортные средства. 
+                                        </p>
+                                        <p>
+                                            Действие <a href="/signs/5#5.15.1">знаков 5.15.1</a>
+                                            и <a href="/signs/5#5.15.2">5.15.2,</a>
+                                            установленных перед перекрестком, распространяется на весь перекресток, если другие <a href="/signs/5#5.15.1">знаки 5.15.1</a>
+                                            и <a href="/signs/5#5.15.2">5.15.2,</a>
+                                            установленные на нем, не дают иных указаний. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.3"></a>
+                                                <img src="./photoTheory/signs/5.15.3.png" width="300" height="98">
+                                                <div class="code">
+                                                    <a href="#5.15.3" class="paragraph">5.15.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Начало полосы </div>
+                                        <p>Начало дополнительной полосы на подъеме или полосы торможения. </p>
+                                        <p>
+                                            Если на знаке, установленном перед дополнительной полосой, изображен знак (знаки) <a href="/signs/4#4.6">4.6</a>
+                                            «Ограничение минимальной скорости», то водитель транспортного средства, который не может продолжать движение по основной полосе с указанной или большей скоростью, должен перестроиться на полосу, расположенную справа от него. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.4"></a>
+                                                <img src="./photoTheory/signs/5.15.4.png" width="191" height="96">
+                                                <div class="code">
+                                                    <a href="#5.15.4" class="paragraph">5.15.4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Начало полосы </div>
+                                        <p>Начало участка средней полосы трехполосной дороги, предназначенного для движения в данном направлении. Если на знаке 5.15.4 изображен знак, запрещающий движение каким-либо транспортным средствам, то движение этих транспортных средств по соответствующей полосе запрещается. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.5"></a>
+                                                <img src="./photoTheory/signs/5.15.5.png" width="96" height="94">
+                                                <div class="code">
+                                                    <a href="#5.15.5" class="paragraph">5.15.5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец полосы </div>
+                                        <p>Конец дополнительной полосы на подъеме или полосы разгона. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.6"></a>
+                                                <img src="./photoTheory/signs/5.15.6.png" width="96" height="92">
+                                                <div class="code">
+                                                    <a href="#5.15.6" class="paragraph">5.15.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец полосы </div>
+                                        <p>Конец участка средней полосы на трехполосной дороге, предназначенного для движения в данном направлении. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.7"></a>
+                                                <img src="./photoTheory/signs/5.15.7.png" width="300" height="74">
+                                                <div class="code">
+                                                    <a href="#5.15.7" class="paragraph">5.15.7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Направление движения по полосам </div>
+                                        <p>
+                                            Если на <a href="/signs/5#5.15.7">знаке 5.15.7</a>
+                                            изображен знак, запрещающий движение каким-либо транспортным средствам, то движение этих транспортных средств по соответствующей полосе запрещается. 
+                                        </p>
+                                        <p>
+                                            <a href="/signs/5#5.15.7">Знаки 5.15.7</a>
+                                            с соответствующим числом стрелок могут применяться на дорогах с четырьмя и более полосами. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.15.8"></a>
+                                                <img src="./photoTheory/signs/5.15.8.png" width="188" height="96">
+                                                <div class="code">
+                                                    <a href="#5.15.8" class="paragraph">5.15.8</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Число полос </div>
+                                        <p>Указывает число полос движения и режимы движения по полосам. Водитель обязан выполнять требования знаков, нанесенных на стрелки. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.16"></a>
+                                                <img src="./photoTheory/signs/5.16.png" width="96" height="138">
+                                                <div class="code">
+                                                    <a href="#5.16" class="paragraph">5.16</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Место остановки автобуса и (или) троллейбуса </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.17"></a>
+                                                <img src="./photoTheory/signs/5.17.png" width="96" height="136">
+                                                <div class="code">
+                                                    <a href="#5.17" class="paragraph">5.17</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Место остановки трамвая </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.18"></a>
+                                                <img src="./photoTheory/signs/5.18.png" width="96" height="136">
+                                                <div class="code">
+                                                    <a href="#5.18" class="paragraph">5.18</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Место стоянки легковых такси </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.19.1"></a>
+                                                <img src="./photoTheory/signs/5.19.1.png" width="96" height="94">
+                                                <div class="code">
+                                                    <a href="#5.19.1" class="paragraph">5.19.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.19.2"></a>
+                                                <img src="./photoTheory/signs/5.19.2.png" width="96" height="93">
+                                                <div class="code">
+                                                    <a href="#5.19.2" class="paragraph">5.19.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пешеходный переход </div>
+                                        <p>
+                                            При отсутствии на переходе <a href="/marks/1#1.14.1">разметки 1.14.1</a>
+                                            или <a href="/marks/1#1.14.2">1.14.2</a>
+                                            <a href="/signs/5#5.19.1">знак 5.19.1</a>
+                                            устанавливается справа от дороги на ближней границе перехода относительно приближающихся транспортных средств, а <a href="/signs/5#5.19.2">знак 5.19.2</a>
+                                            — слева от дороги на дальней границе перехода. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.20"></a>
+                                                <img src="./photoTheory/signs/5.20.png" width="96" height="96">
+                                                <div class="code">
+                                                    <a href="#5.20" class="paragraph">5.20</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Искусственная неровность </div>
+                                        <p>Обозначает границы искусственной неровности. </p>
+                                        <p>
+                                            <a href="/signs/5#5.20">Знак</a>
+                                            устанавливается на ближайшей границе искусственной неровности относительно приближающихся транспортных средств. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.21"></a>
+                                                <img src="./photoTheory/signs/5.21.png" width="96" height="140">
+                                                <div class="code">
+                                                    <a href="#5.21" class="paragraph">5.21</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Жилая зона </div>
+                                        <p>
+                                            Территория, на которой действуют требования <a href="/rules/17#17.1">Правил</a>
+                                            дорожного движения Российской Федерации, устанавливающие порядок движения в жилой зоне. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.22"></a>
+                                                <img src="./photoTheory/signs/5.22.png" width="96" height="140">
+                                                <div class="code">
+                                                    <a href="#5.22" class="paragraph">5.22</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец жилой зоны </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.23.1"></a>
+                                                <img src="./photoTheory/signs/5.23.1.png" width="185" height="52">
+                                                <div class="code">
+                                                    <a href="#5.23.1" class="paragraph">5.23.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.23.2"></a>
+                                                <img src="./photoTheory/signs/5.23.2.png" width="185" height="62">
+                                                <div class="code">
+                                                    <a href="#5.23.2" class="paragraph">5.23.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Начало населенного пункта </div>
+                                        <p>Начало населенного пункта, в котором действуют требования Правил дорожного движения Российской Федерации, устанавливающие порядок движения в населенных пунктах. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.24.1"></a>
+                                                <img src="./photoTheory/signs/5.24.1.png" width="183" height="52">
+                                                <div class="code">
+                                                    <a href="#5.24.1" class="paragraph">5.24.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="5.24.2"></a>
+                                                <img src="./photoTheory/signs/5.24.2.png" width="185" height="62">
+                                                <div class="code">
+                                                    <a href="#5.24.2" class="paragraph">5.24.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец населенного пункта </div>
+                                        <p>Место, с которого на данной дороге утрачивают силу требования Правил дорожного движения Российской Федерации, устанавливающие порядок движения в населенных пунктах. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.25"></a>
+                                                <img src="./photoTheory/signs/5.25.png" width="192" height="67">
+                                                <div class="code">
+                                                    <a href="#5.25" class="paragraph">5.25</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Начало населенного пункта </div>
+                                        <p>Начало населенного пункта, в котором на данной дороге не действуют требования Правил дорожного движения Российской Федерации, устанавливающие порядок движения в населенных пунктах. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.26"></a>
+                                                <img src="./photoTheory/signs/5.26.png" width="192" height="67">
+                                                <div class="code">
+                                                    <a href="#5.26" class="paragraph">5.26</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец населенного пункта </div>
+                                        <p>
+                                            Конец населенного пункта, обозначенного <a href="/signs/5#5.25">знаком 5.25.</a>
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.27"></a>
+                                                <img src="./photoTheory/signs/5.27.png" width="96" height="140">
+                                                <div class="code">
+                                                    <a href="#5.27" class="paragraph">5.27</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Зона с ограничением стоянки </div>
+                                        <p>Место, с которого начинается территория (участок дороги), где стоянка запрещена. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.28"></a>
+                                                <img src="./photoTheory/signs/5.28.png" width="96" height="142">
+                                                <div class="code">
+                                                    <a href="#5.28" class="paragraph">5.28</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны с ограничением стоянки </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.29"></a>
+                                                <img src="./photoTheory/signs/5.29.png" width="96" height="143">
+                                                <div class="code">
+                                                    <a href="#5.29" class="paragraph">5.29</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Зона регулируемой стоянки </div>
+                                        <p>Место, с которого начинается территория (участок дороги), где стоянка разрешена и регулируется с помощью табличек и разметки. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.30"></a>
+                                                <img src="./photoTheory/signs/5.30.png" width="96" height="144">
+                                                <div class="code">
+                                                    <a href="#5.30" class="paragraph">5.30</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны регулируемой стоянки </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.31"></a>
+                                                <img src="./photoTheory/signs/5.31.png" width="96" height="142">
+                                                <div class="code">
+                                                    <a href="#5.31" class="paragraph">5.31</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Зона с ограничением максимальной скорости </div>
+                                        <p>Место, с которого начинается территория (участок дороги), где ограничена максимальная скорость движения. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.32"></a>
+                                                <img src="./photoTheory/signs/5.32.png" width="96" height="141">
+                                                <div class="code">
+                                                    <a href="#5.32" class="paragraph">5.32</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны с ограничением максимальной скорости </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.33"></a>
+                                                <img src="./photoTheory/signs/5.33.png" width="96" height="142">
+                                                <div class="code">
+                                                    <a href="#5.33" class="paragraph">5.33</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пешеходная зона </div>
+                                        <p>
+                                            Место, с которого начинается территория (участок дороги), на которой разрешено движение пешеходов и в случаях, установленных пунктами <a href="/rules/24#24.2">24.2 - 24.4</a>
+                                            и <a href="/rules/24#24.6">24.6</a>
+                                            настоящих Правил, лиц, использующих для движения средства индивидуальной мобильности, и велосипедистов. (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.33.1"></a>
+                                                <img src="./photoTheory/signs/5.33.1.png" width="96" height="144">
+                                                <div class="code striked-out">
+                                                    <a href="#5.33.1" class="paragraph">5.33.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name striked-out">Велосипедная зона </div>
+                                        <p>
+                                            Абзац о знаке "Велосипедная зона" утратил силу с 1 марта 2023 года. Введен <a href="/signs/5#5.39">знак 5.39</a>
+                                            . - Постановление Правительства РФ от 06.10.2022 № 1769. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.34"></a>
+                                                <img src="./photoTheory/signs/5.34.png" width="96" height="142">
+                                                <div class="code">
+                                                    <a href="#5.34" class="paragraph">5.34</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец пешеходной зоны </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.34.1"></a>
+                                                <img src="./photoTheory/signs/5.34.1.png" width="96" height="144">
+                                                <div class="code striked-out">
+                                                    <a href="#5.34.1" class="paragraph">5.34.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name striked-out">Конец велосипедной зоны </div>
+                                        <p>
+                                            Абзац о знаке "Конец велосипедной зоны" утратил силу с 1 марта 2023 года. Введен <a href="/signs/5#5.40">знак 5.40</a>
+                                            . - Постановление Правительства РФ от 06.10.2022 № 1769. 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.35"></a>
+                                                <img src="./photoTheory/signs/5.35.png" width="96" height="139">
+                                                <div class="code">
+                                                    <a href="#5.35" class="paragraph">5.35</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Зона с ограничением экологического класса механических транспортных средств </div>
+                                        <p>Место, с которого начинается территория (участок дороги), где запрещено движение механических транспортных средств: </p>
+                                        <ul>
+                                            <li>экологический класс которых, указанный в регистрационных документах на эти транспортные средства, ниже экологического класса, указанного на знаке; </li>
+                                            <li>экологический класс которых не указан в регистрационных документах на эти транспортные средства. </li>
+                                        </ul>
+                                        (введен Постановлением Правительства РФ от 12.07.2017 № 832) 
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.36"></a>
+                                                <img src="./photoTheory/signs/5.36.png" width="96" height="142">
+                                                <div class="code">
+                                                    <a href="#5.36" class="paragraph">5.36</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны с ограничением экологического класса механических транспортных средств </div>
+                                        <p>(абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.37"></a>
+                                                <img src="./photoTheory/signs/5.37.png" width="97" height="142">
+                                                <div class="code">
+                                                    <a href="#5.37" class="paragraph">5.37</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Зона с ограничением экологического класса по видам транспортных средств </div>
+                                        <p>Место, с которого начинается территория (участок дороги), где запрещено движение грузовых автомобилей, тракторов и самоходных машин: </p>
+                                        <ul>
+                                            <li>экологический класс которых, указанный в регистрационных документах на эти транспортные средства, ниже экологического класса, указанного на знаке; </li>
+                                            <li>экологический класс которых не указан в регистрационных документах на эти транспортные средства. </li>
+                                        </ul>
+                                        (в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                    </div>
+                                    <div class="sign">
+                                        <p>
+                                            Действие знаков <a href="/signs/5#5.35">5.35</a>
+                                            <img class="sign-icon" src="./photoTheory/signs/5.35.png" width="13" height="20">
+                                            и <a href="/signs/5#5.37">5.37</a>
+                                            <img class="sign-icon" src="./photoTheory/signs/5.37.png" width="13" height="20">не распространяется на механические транспортные средства Вооруженных Сил Российской Федерации, полиции, аварийно-спасательных служб и формирований, пожарной охраны, скорой медицинской помощи, аварийной службы газовой сети и механические транспортные средства организаций федеральной почтовой связи, имеющие на боковой поверхности белую диагональную полосу на синем фоне, эмблему организаций федеральной почтовой связи, надпись "Почта России", электромобили, транспортные средства, на которых установлен опознавательный знак "Инвалид", а также на транспортные средства, которые принадлежат гражданам, проживающим в обозначенной зоне. (абзац введен Постановлением Правительства РФ от 12.07.2017 № 832; в ред. Постановления Правительства РФ от 06.10.2022 № 1769) 
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.38"></a>
+                                                <img src="./photoTheory/signs/5.38.png" width="97" height="142">
+                                                <div class="code">
+                                                    <a href="#5.38" class="paragraph">5.38</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец зоны с ограничением экологического класса по видам транспортных средств </div>
+                                        <p>(абзац введен Постановлением Правительства РФ от 12.07.2017 № 832; в ред. Постановления Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.39"></a>
+                                                <img src="./photoTheory/signs/5.39.png" width="96" height="143">
+                                                <div class="code">
+                                                    <a href="#5.39" class="paragraph">5.39</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Велосипедная зона </div>
+                                        <p>Место, с которого начинается велосипедная зона. (абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="5.40"></a>
+                                                <img src="./photoTheory/signs/5.40.png" width="96" height="143">
+                                                <div class="code">
+                                                    <a href="#5.40" class="paragraph">5.40</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Конец велосипедной зоны </div>
+                                        <p>(абзац введен Постановлением Правительства РФ от 06.10.2022 № 1769) </p>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="next">
+                                        <a href="./signs6.html">Дальше </a>
+                                        → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="banner-mobile"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</html>

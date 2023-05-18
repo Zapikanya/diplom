@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="oneBilet.css">
+</head>
+<body class="main-body">
+  <div class = 'main-menu'>
+    <div class="menu-header">
+      <a href="main.html">
+        <div class="arrow"></div>
+      </a>
+      <button onclick="prev()" class="button-arrow"><</button>
+      <p id="count">1/20</p>
+      <button onclick="next()" class="button-arrow">></button>
+      <p id="bilet">№1</p>
+      <p id="timer">20:00</p>
+    </div>
+    <div class="block-photo" ><img src="./road.jpg" alt="вопрос без изображения"></div>
+    <div class="block-text"><p id = 'question' class = 'text'></p></div>
+    <input type="hidden" value="0" id = 'input' >
+    <div class = 'main-buttons' id = 'main-buttons'></div>
+  </div>
+  <script>
+        function startTimer(duration, display) {
+          var timer = duration, minutes, seconds;
+            setInterval(function () {
+              minutes = parseInt(timer / 60, 10)
+              seconds = parseInt(timer % 60, 10);
+
+              minutes = minutes < 10 ? "0" + minutes : minutes;
+              seconds = seconds < 10 ? "0" + seconds : seconds;
+
+              display.textContent = minutes + ":" + seconds;
+
+              if (--timer < 0) {
+                  timer = 0;
+                  // timer = duration; // uncomment this line to reset timer automatically after reaching 0
+              }
+            }, 1000);
+        }
+        const timer = document.getElementById('timer')
+        window.onload = () => {
+          startTimer(60 * 20, timer)
+        }
+        var answers = []
+         
+        function next() {
+          console.log(answers)
+          if (Number(input.value) === 19) return
+          input.value = Number(input.value) + 1
+          db = databases[bilet][input.value]
+          question.innerText = db.question
+          count.innerText = `${Number(input.value) + 1}/20`
+          document.getElementById('main-buttons').innerHTML = ''
+
+          db.answers.forEach((el, i) => {
+            var a = document.createElement('button')
+            const prevAnswer = answers.filter((answ) => answ.q == input.value)[0]
+
+            if (prevAnswer) {
+              var correct = db.correct
+
+              if (i === correct && correct === prevAnswer.a) {
+                a.style.backgroundColor = 'green'
+              } else if (i === prevAnswer.a) {
+                a.style.backgroundColor = 'red'
+              }
+
+              a.style.pointerEvents = 'none'
+              a.className = 'button'
+              a.innerText = i + 1 + "." + " " + el
+              
+
+              document.getElementById('main-buttons').append(a)
+              return
+            }
+
+            a.onclick = async () => {
+              var correct = db.correct
+
+              if (i === correct) {
+                answers.push({q: input.value, a: i, correct: true})
+                a.style.backgroundColor = 'green'
+                await fs.readFile('other.json', 'utf-8', async (err, data) => {
+                  data = await JSON.parse(data, null, 2)
+                  await fs.writeFile('other.json', JSON.stringify({...data, correct: data.correct + 1}, null, 2), () => {
+                    console.log('correct')
+                  })
+                })
+              } else {
+                answers.push({q: input.value, a: i, correct: false})
+                a.style.backgroundColor = 'red'
+                await fs.readFile('other.json', 'utf-8', async (err, data) => {
+                  data = await JSON.parse(data, null, 2)
+                  await fs.writeFile('other.json', JSON.stringify({...data, incorrect: data.incorrect + 1}, null, 2), () => {
+                    console.log('correct')
+                  })
+                })
+              }
+
+              for (const btn of document.getElementById('main-buttons').children) {
+                btn.style.pointerEvents = 'none'
+              }
+
+              setTimeout(() => {
+                input.value = Number(input.value) + 1
+                db = databases[bilet][Number(input.value)]
+                question.innerText = db.question
+                count.innerText = `${Number(input.value) + 1}/20`
+                document.getElementById('main-buttons').innerHTML = ''
+                update()
+              }, 1000);
+            }
+            
+            a.className = 'button'
+            a.innerText = i + 1 + "." + " " + el
+            document.getElementById('main-buttons').append(a)
+          })
+        }
+        function prev() {
+          
+          if (Number(input.value) === 0) return
+          input.value = Number(input.value) - 1
+          db = databases[bilet][input.value]
+          document.getElementById('main-buttons').innerHTML = ''
+          question.innerText = db.question
+          count.innerText = `${Number(input.value) + 1}/20`
+
+          db.answers.forEach((el, i) => {
+            var a = document.createElement('button')
+            const prevAnswer = answers.filter((answ) => answ.q == input.value)[0]
+
+            if (prevAnswer) {
+              var correct = db.correct
+
+              if (i === correct && correct === prevAnswer.a) {
+                a.style.backgroundColor = 'green'
+              } else if (i === prevAnswer.a) {
+                a.style.backgroundColor = 'red'
+              }
+
+              a.style.pointerEvents = 'none'
+              a.className = 'button'
+              a.innerText = i + 1 + "." + " " + el
+              
+
+              document.getElementById('main-buttons').append(a)
+              return
+            }
+
+            a.onclick = async () => {
+              var correct = db.correct
+              if (i === correct) {
+                answers.push({q: input.value, a: i, correct: true})
+                a.style.backgroundColor = 'green'
+                await fs.readFile('other.json', 'utf-8', async (err, data) => {
+                  data = await JSON.parse(data, null, 2)
+                  await fs.writeFile('other.json', JSON.stringify({...data, correct: data.correct + 1}, null, 2), () => {
+                    console.log('correct')
+                  })
+                })
+              } else {
+                answers.push({q: input.value, a: i, correct: false})
+                a.style.backgroundColor = 'red'
+                await fs.readFile('other.json', 'utf-8', async (err, data) => {
+                  data = await JSON.parse(data, null, 2)
+                  await fs.writeFile('other.json', JSON.stringify({...data, incorrect: data.incorrect + 1}, null, 2), () => {
+                    console.log('correct')
+                  })
+                })
+              }
+
+              for (const btn of document.getElementById('main-buttons').children) {
+                btn.style.pointerEvents = 'none'
+              }
+
+              setTimeout(() => {
+                input.value = Number(input.value) + 1
+                db = databases[bilet][Number(input.value)]
+                question.innerText = db.question
+                count.innerText = `${Number(input.value) + 1}/20`
+                document.getElementById('main-buttons').innerHTML = ''
+                update()
+              }, 1000);
+            }
+            
+            a.className = 'button'
+            a.innerText = i + 1 + "." + " " + el
+            document.getElementById('main-buttons').append(a)
+          })
+        }
+        const fs = require('fs')
+        const databases = require('./tickets.json') 
+        var input = document.getElementById('input')
+        var bilet = Math.floor(Math.random() * 20);
+        console.log('bilet', bilet)
+        var db = databases[bilet][input.value]
+        var question = document.getElementById('question')
+        var count = document.getElementById('count')
+        var numBilet = document.getElementById('bilet')
+
+        numBilet.innerText = '№' + Number(bilet + 1) 
+        question.innerText = db.question
+        count.innerText = `${Number(input.value) + 1}/20`
+        
+        async function update() {
+          var correct = db.correct
+          
+          db.answers.forEach((el, i) => {
+            var a = document.createElement('button')
+
+            a.onclick = async () => {
+              if (i === correct) {
+                answers.push({q: input.value, a: i, correct: true})
+                a.style.backgroundColor = 'green'
+                await fs.readFile('other.json', 'utf-8', async (err, data) => {
+                  data = await JSON.parse(data, null, 2)
+                  await fs.writeFile('other.json', JSON.stringify({...data, correct: data.correct + 1}, null, 2), () => {
+                    console.log('correct')
+                  })
+                })
+              } else {
+                answers.push({q: input.value, a: i, correct: false})
+                a.style.backgroundColor = 'red'
+                await fs.readFile('other.json', 'utf-8', async (err, data) => {
+                  data = await JSON.parse(data, null, 2)
+                  await fs.writeFile('other.json', JSON.stringify({...data, incorrect: data.incorrect + 1}, null, 2), () => {
+                    console.log('incorrect')
+                  })
+                })
+              }
+
+              for (const btn of document.getElementById('main-buttons').children) {
+                btn.style.pointerEvents = 'none'
+              }
+
+              if (answers.length === 20) {
+                const correctAnswers = answers.reduce((acc, cur) => {
+                  if (cur.correct) {
+                    acc += 1
+                  } 
+                  return acc
+                }, 0)
+
+                setTimeout(() => {
+                  const mainMenu = document.getElementsByClassName('main-menu')[0]
+                  mainMenu.innerHTML = `
+                  <div style="background-color: transparent; color: white; font-weight:bold; font-size: 30px; margin-top:30px;" class="block-photo">
+                    <p>Билет окончен</p>
+                    <p style="margin-top:20px;">РЕЗУЛЬТАТ: ${correctAnswers > 18 ? "<b style='color:green;'>СДАН</b>" : "<b style='color:red;'>НЕ СДАН</b>"}</p>
+                  </div>
+                  <div style="background-color: transparent;" class="block-photo">
+                    <p style="color:white; font-weight:bold; font-size:30px">${correctAnswers} / 20</p>
+                  </div>
+                  <div style="background-color: transparent;" class="block-photo">
+                    <a href="bilets.html" style="color:white; font-weight:bold; font-size:30px">Назад к билетам</a>
+                  </div>
+                  `
+                }, 1000);
+                return
+              }
+
+              setTimeout(() => {
+                input.value = Number(input.value) + 1
+                db = databases[bilet][Number(input.value)]
+                question.innerText = db.question
+                count.innerText = `${Number(input.value) + 1}/20`
+                document.getElementById('main-buttons').innerHTML = ''
+                update()
+              }, 1000);
+            }
+            
+            a.className = 'button'
+            a.innerText = i + 1 + "." + " " + el
+            document.getElementById('main-buttons').append(a)
+          })
+        }
+        update()
+  </script>
+  
+</body>
+</html>

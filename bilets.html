@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bilets.css">
+ 
+  
+</head>
+<body class="main-body">
+  <div class = 'main-menu'>
+  <div class="menu-header"><a href="main.html"><div class="arrow"></div></a><p>Билеты</p></div>
+  
+    <div class = 'main-buttons' id = 'container'>
+      <!-- <a href="oneBilet.html" class="button">1</a> -->
+      
+      
+      
+    </div>
+  </div>
+  
+</body>
+
+<script>
+  const databases = require('./tickets.json') 
+ 
+ // print all databases 
+ databases.forEach((db,i) => { 
+  let a = document.createElement('a');
+  a.className = 'button';
+  a.href = 'oneBilet.html?bilet='+i
+  a.innerText = i+1;
+  document.getElementById('container').appendChild(a);
+
+   
+ })
+</script>
+</html>

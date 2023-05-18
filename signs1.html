@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="date" content="01.05.2023 04:43:42">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="text.css">
+        
+    </head>
+    <body>
+        <div class="spritesheet">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol id="icon-back" viewBox="0 0 24 24">
+                    <title>back</title>
+                    <path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/>
+                    <path d="M17.51 3.87 15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
+                </symbol>
+                
+            </svg>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div id="app">
+                    <div class="navbar" id="navbar">
+                        <div class="left">
+                            <a href="./roadSigns.html">
+                                <svg>
+                                    <use href="#icon-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="title">Правила</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="content-inner">
+                        <div class="static" v-pre>
+                            <div class="rule" id="rule">
+                                <h1>1. Предупреждающие знаки</h1>
+                                <div class="text">
+                                    <div>
+                                        <p>Предупреждающие знаки информируют водителей о приближении к опасному участку дороги, движение по которому требует принятия мер, соответствующих обстановке. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.1"></a>
+                                                <img src="./photoTheory/signs/1.1.png" width="108" height="95">
+                                                <div class="code">
+                                                    <a href="#1.1" class="paragraph">1.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Железнодорожный переезд со шлагбаумом </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.2"></a>
+                                                <img src="./photoTheory/signs/1.2.png" width="112" height="96">
+                                                <div class="code">
+                                                    <a href="#1.2" class="paragraph">1.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Железнодорожный переезд без шлагбаума </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="1.3.1"></a>
+                                                <img src="./photoTheory/signs/1.3.1.png" width="111" height="71">
+                                                <div class="code">
+                                                    <a href="#1.3.1" class="paragraph">1.3.1</a>
+                                                </div>
+                                                <div class="name">Однопутная железная дорога </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="1.3.2"></a>
+                                                <img src="./photoTheory/signs/1.3.2.png" width="111" height="117">
+                                                <div class="code">
+                                                    <a href="#1.3.2" class="paragraph">1.3.2</a>
+                                                </div>
+                                                <div class="name">Многопутная железная дорога </div>
+                                            </div>
+                                        </div>
+                                        <p>Обозначение необорудованного шлагбаумом переезда через железную дорогу: 1.3.1 — с одним путем, 1.3.2 — с двумя путями и более. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.4.1"></a>
+                                                <img src="./photoTheory/signs/1.4.1.png" width="50" height="94">
+                                                <div class="code">
+                                                    <a href="#1.4.1" class="paragraph">1.4.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.4.2"></a>
+                                                <img src="./photoTheory/signs/1.4.2.png" width="50" height="94">
+                                                <div class="code">
+                                                    <a href="#1.4.2" class="paragraph">1.4.2</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.4.3"></a>
+                                                <img src="./photoTheory/signs/1.4.3.png" width="50" height="94">
+                                                <div class="code">
+                                                    <a href="#1.4.3" class="paragraph">1.4.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.4.4"></a>
+                                                <img src="./photoTheory/signs/1.4.4.png" width="50" height="95">
+                                                <div class="code">
+                                                    <a href="#1.4.4" class="paragraph">1.4.4</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.4.5"></a>
+                                                <img src="./photoTheory/signs/1.4.5.png" width="50" height="94">
+                                                <div class="code">
+                                                    <a href="#1.4.5" class="paragraph">1.4.5</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.4.6"></a>
+                                                <img src="./photoTheory/signs/1.4.6.png" width="50" height="94">
+                                                <div class="code">
+                                                    <a href="#1.4.6" class="paragraph">1.4.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Приближение к железнодорожному переезду </div>
+                                        <p>Дополнительное предупреждение о приближении к железнодорожному переезду вне населенных пунктов. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.5"></a>
+                                                <img src="./photoTheory/signs/1.5.png" width="111" height="96">
+                                                <div class="code">
+                                                    <a href="#1.5" class="paragraph">1.5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пересечение с трамвайной линией </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.6"></a>
+                                                <img src="./photoTheory/signs/1.6.png" width="111" height="96">
+                                                <div class="code">
+                                                    <a href="#1.6" class="paragraph">1.6</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пересечение равнозначных дорог </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.7"></a>
+                                                <img src="./photoTheory/signs/1.7.png" width="111" height="97">
+                                                <div class="code">
+                                                    <a href="#1.7" class="paragraph">1.7</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пересечение с круговым движением </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.8"></a>
+                                                <img src="./photoTheory/signs/1.8.png" width="112" height="98">
+                                                <div class="code">
+                                                    <a href="#1.8" class="paragraph">1.8</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Светофорное регулирование </div>
+                                        <p>Перекресток, пешеходный переход или участок дороги, движение на котором регулируется светофором. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.9"></a>
+                                                <img src="./photoTheory/signs/1.9.png" width="108" height="99">
+                                                <div class="code">
+                                                    <a href="#1.9" class="paragraph">1.9</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Разводной мост </div>
+                                        <p>Разводной мост или паромная переправа. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.10"></a>
+                                                <img src="./photoTheory/signs/1.10.png" width="112" height="96">
+                                                <div class="code">
+                                                    <a href="#1.10" class="paragraph">1.10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Выезд на набережную </div>
+                                        <p>Выезд на набережную или берег. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="1.11.1"></a>
+                                                <img src="./photoTheory/signs/1.11.1.png" width="109" height="99">
+                                                <div class="code">
+                                                    <a href="#1.11.1" class="paragraph">1.11.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="1.11.2"></a>
+                                                <img src="./photoTheory/signs/1.11.2.png" width="110" height="98">
+                                                <div class="code">
+                                                    <a href="#1.11.2" class="paragraph">1.11.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Опасный поворот </div>
+                                        <p>Закругление дороги малого радиуса или с ограниченной видимостью: 1.11.1 — направо, 1.11.2 — налево. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="1.12.1"></a>
+                                                <img src="./photoTheory/signs/1.12.1.png" width="109" height="99">
+                                                <div class="code">
+                                                    <a href="#1.12.1" class="paragraph">1.12.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 align-center">
+                                                <a name="1.12.2"></a>
+                                                <img src="./photoTheory/signs/1.12.2.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.12.2" class="paragraph">1.12.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Опасные повороты </div>
+                                        <p>Участок дороги с опасными поворотами: 1.12.1 — с первым поворотом направо, 1.12.2 — с первым поворотом налево. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.13"></a>
+                                                <img src="./photoTheory/signs/1.13.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.13" class="paragraph">1.13</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Крутой спуск </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.14"></a>
+                                                <img src="./photoTheory/signs/1.14.png" width="113" height="101">
+                                                <div class="code">
+                                                    <a href="#1.14" class="paragraph">1.14</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Крутой подъем </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.15"></a>
+                                                <img src="./photoTheory/signs/1.15.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.15" class="paragraph">1.15</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Скользкая дорога </div>
+                                        <p>Участок дороги с повышенной скользкостью проезжей части. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.16"></a>
+                                                <img src="./photoTheory/signs/1.16.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.16" class="paragraph">1.16</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Неровная дорога </div>
+                                        <p>Участок дороги, имеющий неровности на проезжей части (волнистость, выбоины, неплавные сопряжения с мостами и тому подобное). </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.17"></a>
+                                                <img src="./photoTheory/signs/1.17.png" width="111" height="100">
+                                                <div class="code">
+                                                    <a href="#1.17" class="paragraph">1.17</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Искусственная неровность </div>
+                                        <p>Участок дороги с искусственной неровностью (неровностями) для принудительного снижения скорости. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.18"></a>
+                                                <img src="./photoTheory/signs/1.18.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.18" class="paragraph">1.18</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Выброс гравия </div>
+                                        <p>Участок дороги, на котором возможен выброс гравия, щебня и тому подобного из-под колес транспортных средств. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.19"></a>
+                                                <img src="./photoTheory/signs/1.19.png" width="110" height="100">
+                                                <div class="code">
+                                                    <a href="#1.19" class="paragraph">1.19</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Опасная обочина </div>
+                                        <p>Участок дороги, на котором съезд на обочину опасен. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row">
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.20.1"></a>
+                                                <img src="./photoTheory/signs/1.20.1.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.20.1" class="paragraph">1.20.1</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.20.2"></a>
+                                                <img src="./photoTheory/signs/1.20.2.png" width="111" height="99">
+                                                <div class="code">
+                                                    <a href="#1.20.2" class="paragraph">1.20.2</a>
+                                                </div>
+                                            </div>
+                                            <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4 align-center">
+                                                <a name="1.20.3"></a>
+                                                <img src="./photoTheory/signs/1.20.3.png" width="111" height="97">
+                                                <div class="code">
+                                                    <a href="#1.20.3" class="paragraph">1.20.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Сужение дороги </div>
+                                        <p>Сужение с обеих сторон — 1.20.1, справа — 1.20.2, слева — 1.20.3. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.21"></a>
+                                                <img src="./photoTheory/signs/1.21.png" width="110" height="98">
+                                                <div class="code">
+                                                    <a href="#1.21" class="paragraph">1.21</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Двустороннее движение </div>
+                                        <p>Начало участка дороги (проезжей части) с встречным движением. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.22"></a>
+                                                <img src="./photoTheory/signs/1.22.png" width="110" height="98">
+                                                <div class="code">
+                                                    <a href="#1.22" class="paragraph">1.22</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пешеходный переход </div>
+                                        <p>
+                                            Пешеходный переход, обозначенный 
+                                            <a href="/signs/5#5.19.1">
+                                                знаками 5.19.1 <img class="sign-icon" src="./photoTheory/signs/5.19.1.png" width="20" height="20">,
+                                            </a>
+                                            <a href="/signs/5#5.19.2">
+                                                5.19.2 <img class="sign-icon" src="./photoTheory/signs/5.19.2.png" width="20" height="20">
+                                            </a>
+                                            и (или) 
+                                            <a href="/marks/1#1.14.1">
+                                                разметкой 1.14.1 <img class="sign-icon" src="./photoTheory/signs/h1.14.1.png" width="10" height="20">
+                                            </a>
+                                            и 
+                                            <a href="/marks/1#1.14.2">
+                                                1.14.2. <img class="sign-icon" src="./photoTheory/signs/h1.14.2.png" width="16" height="20">
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.23"></a>
+                                                <img src="./photoTheory/signs/1.23.png" width="110" height="98">
+                                                <div class="code">
+                                                    <a href="#1.23" class="paragraph">1.23</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дети </div>
+                                        <p>Участок дороги вблизи детского учреждения (школы, оздоровительного лагеря и тому подобного), на проезжей части которого возможно появление детей. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.24"></a>
+                                                <img src="./photoTheory/signs/1.24.png" width="110" height="99">
+                                                <div class="code">
+                                                    <a href="#1.24" class="paragraph">1.24</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Пересечение с велосипедной дорожкой или велопешеходной дорожкой </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.25"></a>
+                                                <img src="./photoTheory/signs/1.25.png" width="115" height="102">
+                                                <div class="code">
+                                                    <a href="#1.25" class="paragraph">1.25</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дорожные работы </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.26"></a>
+                                                <img src="./photoTheory/signs/1.26.png" width="113" height="98">
+                                                <div class="code">
+                                                    <a href="#1.26" class="paragraph">1.26</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Перегон скота </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.27"></a>
+                                                <img src="./photoTheory/signs/1.27.png" width="114" height="98">
+                                                <div class="code">
+                                                    <a href="#1.27" class="paragraph">1.27</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Дикие животные </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.28"></a>
+                                                <img src="./photoTheory/signs/1.28.png" width="112" height="99">
+                                                <div class="code">
+                                                    <a href="#1.28" class="paragraph">1.28</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Падение камней </div>
+                                        <p>Участок дороги, на котором возможны обвалы, оползни, падение камней. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.29"></a>
+                                                <img src="./photoTheory/signs/1.29.png" width="114" height="101">
+                                                <div class="code">
+                                                    <a href="#1.29" class="paragraph">1.29</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Боковой ветер </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.30"></a>
+                                                <img src="./photoTheory/signs/1.30.png" width="114" height="98">
+                                                <div class="code">
+                                                    <a href="#1.30" class="paragraph">1.30</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Низколетящие самолеты </div>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.31"></a>
+                                                <img src="./photoTheory/signs/1.31.png" width="111" height="100">
+                                                <div class="code">
+                                                    <a href="#1.31" class="paragraph">1.31</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Тоннель </div>
+                                        <p>Тоннель, в котором отсутствует искусственное освещение, или тоннель, видимость въездного портала которого ограничена. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.32"></a>
+                                                <img src="./photoTheory/signs/1.32.png" width="110" height="102">
+                                                <div class="code">
+                                                    <a href="#1.32" class="paragraph">1.32</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Затор </div>
+                                        <p>Участок дороги, на котором образовался затор. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.33"></a>
+                                                <img src="./photoTheory/signs/1.33.png" width="113" height="97">
+                                                <div class="code">
+                                                    <a href="#1.33" class="paragraph">1.33</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Прочие опасности </div>
+                                        <p>Участок дороги, на котором имеются опасности, не предусмотренные другими предупреждающими знаками. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.34.1"></a>
+                                                <img src="./photoTheory/signs/1.34.1.png" width="300" height="30">
+                                                <div class="code">
+                                                    <a href="#1.34.1" class="paragraph">1.34.1</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.34.2"></a>
+                                                <img src="./photoTheory/signs/1.34.2.png" width="300" height="30">
+                                                <div class="code">
+                                                    <a href="#1.34.2" class="paragraph">1.34.2</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Направление поворота </div>
+                                        <p>Направление движения на закруглении дороги малого радиуса с ограниченной видимостью. Направление объезда ремонтируемого участка дороги. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.34.3"></a>
+                                                <img src="./photoTheory/signs/1.34.3.png" width="300" height="35">
+                                                <div class="code">
+                                                    <a href="#1.34.3" class="paragraph">1.34.3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Направление поворота </div>
+                                        <p>Направления движения на Т-образном перекрестке или разветвлении дорог. Направления объезда ремонтируемого участка дороги. </p>
+                                    </div>
+                                    <div class="w-container sign">
+                                        <div class="w-row align-center">
+                                            <div>
+                                                <a name="1.35"></a>
+                                                <img src="./photoTheory/signs/1.35.png" width="115" height="101">
+                                                <div class="code">
+                                                    <a href="#1.35" class="paragraph">1.35</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="name">Участок перекрестка </div>
+                                        <p>
+                                            Обозначение приближения к перекрестку, участок которого обозначен 
+                                            <a href="/marks/1#1.26">
+                                                разметкой 1.26 <img class="sign-icon" src="./photoTheory/signs/h1.26.png" width="22" height="20">
+                                            </a>
+                                            и на который запрещается выезжать, если впереди по пути следования образовался затор, который вынудит водителя остановиться, создав препятствие для движения транспортных средств в поперечном направлении, за исключением поворота направо или налево в случаях, установленных настоящими Правилами. (абзац введен Постановлением Правительства РФ от 20.10.2017 N 1276) 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Предупреждающие <a href="/signs/1#1.1">знаки 1.1,</a>
+                                            <a href="/signs/1#1.2">1.2,</a>
+                                            <a href="/signs/1#1.5">1.5</a>
+                                            — <a href="/signs/1#1.33">1.33</a>
+                                            вне населенных пунктов устанавливаются на расстоянии 150 — 300 м, в населенных пунктах — на расстоянии 50 — 100 м до начала опасного участка. При необходимости знаки могут устанавливаться и на ином расстоянии, которое в этом случае указывается на <a href="/signs/8#8.1.1">табличке 8.1.1.</a>
+                                        </p>
+                                        <p>
+                                            <a href="/signs/1#1.13">Знаки 1.13</a>
+                                            и <a href="/signs/1#1.14">1.14</a>
+                                            могут устанавливаться без <a href="/signs/8#8.1.1">таблички 8.1.1</a>
+                                            непосредственно перед началом спуска или подъема, если спуски и подъемы следуют друг за другом. 
+                                        </p>
+                                        <p>
+                                            <a href="/signs/1#1.25">Знак 1.25</a>
+                                            при проведении краткосрочных работ на проезжей части может устанавливаться без <a href="/signs/8#8.1.1">таблички 8.1.1</a>
+                                            на расстоянии 10 — 15 м до места проведения работ. 
+                                        </p>
+                                        <p>
+                                            <a href="/signs/1#1.32">Знак 1.32</a>
+                                            применяется в качестве временного или в знаках с изменяемым изображением перед перекрестком, откуда возможен объезд участка дороги, на котором образовался затор. 
+                                        </p>
+                                        <p>
+                                            <a href="/signs/1#1.35">Знак 1.35</a>
+                                            устанавливается на границе перекрестка. В случае если на сложных перекрестках невозможно установить дорожный знак на границе перекрестка, его устанавливают на расстоянии не более 30 метров до границы перекрестка. (абзац введен Постановлением Правительства РФ от 20.10.2017 N 1276) 
+                                        </p>
+                                        <p>
+                                            Вне населенных пунктов <a href="/signs/1#1.1">знаки 1.1,</a>
+                                            <a href="/signs/1#1.2">1.2,</a>
+                                            <a href="/signs/1#1.9">1.9,</a>
+                                            <a href="/signs/1#1.10">1.10,</a>
+                                            <a href="/signs/1#1.23">1.23</a>
+                                            и <a href="/signs/1#1.25">1.25</a>
+                                            повторяются. Второй знак устанавливается на расстоянии не менее 50 м до начала опасного участка. Знаки <a href="/signs/1#1.23">1.23</a>
+                                            и <a href="/signs/1#1.25">1.25</a>
+                                            повторяются и в населенных пунктах непосредственно в начале опасного участка. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="next">
+                                        <a href="./signs2.html">Дальше </a>
+                                        → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="banner-mobile"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</html>
